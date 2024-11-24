@@ -5,12 +5,12 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBRJpTAF5BicWe2Y9D538_8-gtce0Inrj0",
-    authDomain: "chloe-partiful.firebaseapp.com",
-    projectId: "chloe-partiful",
-    storageBucket: "chloe-partiful.firebasestorage.app",
-    messagingSenderId: "1065889984138",
-    appId: "1:1065889984138:web:23764f483cb00ba1ad0773",
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID,
 };
 
 const app = firebase.initializeApp(firebaseConfig);
